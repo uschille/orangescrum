@@ -2580,7 +2580,7 @@ class UsersController extends AppController {
 		if (isset($_GET['state']) && $_GET['state'] != 'contact') {
 		    $user = $service->userinfo->get();
 		    $info = (array)$user;
-		    fwrite($h, print_r($info,true));
+		    //fwrite($h, print_r($info,true));
 		    if (isset($info) && !empty($info)) {
 			$_SESSION['CHECK_GOOGLE_SES'] = 0;
 			$_SESSION['GOOGLE_USER_INFO'] = $info;

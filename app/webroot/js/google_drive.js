@@ -120,7 +120,7 @@ function fileGetCallback(fileName, file){
 	    content = content + ',"embedLink":"'+file.embedLink+'"';
 	if(file.webContentLink != undefined)
 	    content = content + ',"webContentLink":"'+file.webContentLink+'"';
-	if(file.parents != undefined)
+	if(file.parents['0'] != undefined)
 	    content = content + ',"parent_id":"'+file.parents['0'].id+'"';
 	content = content + '}';
 
